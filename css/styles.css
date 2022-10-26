@@ -1,0 +1,66 @@
+/* Головний колір тексту (параграфів) #555555 */
+/* Додатковий колір тексту (заголовків) #303030 */
+/* Акцентний колір #FF6C00 */
+/* Основний колір тексту на темному фоні #FFFFFF */
+/* Додатковий колір тексту на темному фоні #9DA4BD */
+
+/* Він же з прозорістю 60% rgba(157, 164, 189, 0.6); */
+/* Bін же з прозорістю 40% rgba(157, 164, 189, 0.4); */
+
+
+/* Головний колір фону #FFFFFF */
+/* Додатковий колір фону #F7F7F7 */
+/* Акцентний колір фону #191C26*/
+/* Акцентний колір фону #111319 */
+
+:root {
+    --primary-text-color: #555555;
+    --secondary-text-color: #303030;
+    --accent-color: #FF6C00;
+
+    --primary-dark-bg-text-color: #FFFFFF;
+    --secondary-dark-bg-text-color: #9DA4BD;
+
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #F7F7F7;
+    --accent-background-color: #191C26;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+/* Прибирає крапки-маркери у списках */
+.list {
+    list-style: none;
+}
+
+/* BUTTON */
+
+/* ЛОГОТИП */
+.logo {
+    color: var(--secondary-text-color);
+}
+
+/* НАВІГАЦІЯ */
+.site-nav {
+    background-color: rgba(25, 28, 38, 0.2);
+}
+.site-nav .link {
+    color: var(--primary-dark-bg-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.site-nav .link.current:hover,
+.site-nav .link.current:focus {
+    color: var(--primary-dark-bg-text-color);
+}
+
