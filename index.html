@@ -8,62 +8,71 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/" class="logo"><img src="./images/Logo.svg" alt="logo"></a>
-                <nav>
-            <ul class="site-nav list">
-                <li><a href="" class="current link">About</a></li>
-                <li><a href="" class="link">Services and prices</a></li>
-                <li><a href="" class="link">Barbers</a></li>
-                <li><a href="" class="link">Contacts</a></li>
-            </ul>
-        </nav>
-        <a href="tel:+380441111111" class="tel">+38 044 111 11 11</a>
-        <button type="button">Online-booking</button>
+        <!-- DIV для темного бекграунду, видалити потім -->
+        <div class="dark-bg">
+            <nav>
+                <ul class="header-nav list">
+                    <li><a href="" class="current link">About</a></li>
+                    <li><a href="" class="link">Services and prices</a></li>
+                    <li><a href="" class="link">Barbers</a></li>
+                    <li><a href="" class="link">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+380441111111" class="phone">+38 044 111 11 11</a>
+            <button type="button" class="button">Online-booking</button>
+        </div>
     </header>
     <main>
         <!-- HERO -->
         <section>
-            <ul class="list">
-                <li><a href="" aria-label="Instagram link">Instagram</a></li>
-                <li><a href="" aria-label="Youtube link">Youtube</a></li>
+            <ul class="media list">
+                <li><a href="" class="link" aria-label="Instagram link">Instagram</a></li>
+                <li><a href="" class="link" aria-label="Youtube link">Youtube</a></li>
             </ul>
-            <p>A hair salon for men in Kyiv</p>
-            <h1>BarberShop</h1>
-            <p>We are experts in trendy men’s haircuts.
-            We work quickly, carefully and with style.</p>
+            <!-- DIV для темного бекграунду, видалити потім -->
+            <div class="dark-bg">
+                <p class="uptitle dark">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title">BarberShop</h1>
+                <p class="description">We are experts in trendy men’s haircuts.
+                    We work quickly, carefully and with style.</p>
+            </div>
         </section>
         <!-- ABOUT US -->
-        <section>
+        <section class="about">
             <ul class="list">
                 <li><img src="./images/best1.jpg" alt="Beard shaving" width="270" height="445"></li>
                 <li><img src="./images/best2.jpg" alt="Man's haircut with razor shave" width="270" height="445"></li>
             </ul>
-            <p>About</p>
-            <h2>Best Barbershop in your city</h2>
-            <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-            <p>We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
+            <p class="uptitle light">About</p>
+            <h2 class="section-title">Best Barbershop in your city</h2>
+            <p class="description white">If you want to add more confidence to your image, you should definitely visit us.</p>
+            <p class="text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
             of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
             Therefore, we are always ready to improve everyone who comes to us!</p>
-            <button type="button">Online-booking</button>
+            <button type="button" class="button">Online-booking</button>
         </section>
         <!-- SERVICES and PRICES -->
         <section>
-            <p>Spend your time with the best masters</p>
-            <h2>Services and prices</h2>
-            <ul class="list">
-                <li><p>Men’s haircut <span>from 300 uah.</span></p></li>
-                <li><p>Beard trim <span>from 300 uah.</span></p></li>
-                <li><p>Mustache trim <span>from 200 uah.</span></p></li>
-                <li><p>Straight razor shave <span>from 200 uah.</span></p></li>
-            </ul>
-            <ul class="list">
-                <li><p>Trainee’s haircut <span>from 50 uah.</span></p></li>
-                <li><p>Haircut under the nozzle <span>from 200 uah.</span></p></li>
-                <li><p>Children’s haircut (0-12 y.o.) <span>from 300 uah.</span></p></li>
-                <li><p>Camouflage of gray hair <span>from 200 uah.</span></p></li>
-            </ul>
-            <button type="button">Online-booking</button>
+            <!-- DIV для темного бекграунду, видалити потім -->
+            <div class="dark-bg">
+                <p class="uptitle dark">Spend your time with the best masters</p>
+                <h2 class="section-title dark">Services and prices</h2>
+                <ul class="list">
+                    <li><p class="description">Men’s haircut <span>from 300 uah.</span></p></li>
+                    <li><p class="description">Beard trim <span>from 300 uah.</span></p></li>
+                    <li><p class="description">Mustache trim <span>from 200 uah.</span></p></li>
+                    <li><p class="description">Straight razor shave <span>from 200 uah.</span></p></li>
+                </ul>
+                <ul class="list">
+                    <li><p class="description">Trainee’s haircut <span>from 50 uah.</span></p></li>
+                    <li><p class="description">Haircut under the nozzle <span>from 200 uah.</span></p></li>
+                    <li><p class="description">Children’s haircut (0-12 y.o.) <span>from 300 uah.</span></p></li>
+                    <li><p class="description">Camouflage of gray hair <span>from 200 uah.</span></p></li>
+                </ul>
+                <button type="button" class="button">Online-booking</button>
+            </div>
         </section>
         <!-- FEATURES -->
         <section>
@@ -85,14 +94,14 @@
                     <p>Gifts for regular customers</p>
                 </li>
             </ul>
-            <p>Old traditional school</p>
-            <h2>&#191;Why people come to us?</h2>
-            <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
+            <p class="uptitle light">Old traditional school</p>
+            <h2 class="section-title">&#191;Why people come to us?</h2>
+            <p class="description white">Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
         </section>
         <!-- TEAM -->
         <section>
-            <p>For true enjoyers of the atmosphere</p>
-            <h2>Our barbers</h2>
+            <p class="uptitle light">For true enjoyers of the atmosphere</p>
+            <h2 class="section-title">Our barbers</h2>
             <ul class="list">
                 <li>
                     <img src="./images/barber1.jpg" alt="John Smith" width="370" height="346">
@@ -131,8 +140,8 @@
         </section>
         <!-- PORTFOLIO -->
         <section>
-            <p>In Latin, "barba" means "beard"</p>
-            <h2>Portfolio</h2>
+            <p class="uptitle light">In Latin, "barba" means "beard"</p>
+            <h2 class="section-title">Portfolio</h2>
             <ul class="list">
                 <li><img src="./images/portfolio-card1.jpg" alt="Barber is making haircut" width="270" height="360"></li>
                 <li><img src="./images/portfolio-card2.jpg" alt="Barber is saving a men" width="270" height="360"></li>
@@ -142,20 +151,23 @@
         </section>
         <!-- CONTACTS -->
         <section>
-            <div>
-                <h2>Online-booking</h2>
-                <button type="button">Send</button>
+            <!-- DIV для темного бекграунду, видалити потім -->
+            <div class="dark-bg">
+                <div>
+                    <h2 class="section-title dark">Online-booking</h2>
+                    <button type="button" class="button">Send</button>
+                </div>
+                <div>
+                    <h2 class="section-title dark">Contacts</h2>
+                    <address>
+                        st. Vasilkovaya, 7A<br>Kiev, 08132
+                        <a href="tel:+380441111111"  class="description">+38 044 111 11 11</a>
+                        <a href="mailto:barbershop@email.com" class="description">barbershop@email.com</a>
+                    </address>
+                </div>
+                <p class="uptitle contacts">Working hours</p>
+                <p class="description">Every day from 9:00 to 22:00</p>
             </div>
-            <div>
-                <h2>Contacts</h2>
-                <address>
-                    st. Vasilkovaya, 7A<br>Kiev, 08132
-                    <a href="tel:+380441111111">+38 044 111 11 11</a>
-                    <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-                </address>
-            </div>
-            <p>Working hours</p>
-            <p>Every day from 9:00 to 22:00</p>
         </section>
     </main>
     <footer>
