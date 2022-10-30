@@ -1,170 +1,333 @@
-/* Головний колір тексту (параграфів) #555555 */
-/* Додатковий колір тексту (заголовків) #303030 */
-/* Акцентний колір #FF6C00 */
-/* Основний колір тексту на темному фоні #FFFFFF */
-/* Додатковий колір тексту на темному фоні #9DA4BD */
-
-/* Він же з прозорістю 60% rgba(157, 164, 189, 0.6); */
-/* Bін же з прозорістю 40% rgba(157, 164, 189, 0.4); */
-
-
-/* Головний колір фону #FFFFFF */
-/* Додатковий колір фону #F7F7F7 */
-/* Акцентний колір фону #191C26*/
-/* Акцентний колір фону #111319 */
-
 :root {
-    --primary-text-color: #303030;
-    --secondary-text-color: #555555;
-    --accent-color: #FF6C00;
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --accent-color: #ff6c00;
 
-    --primary-dark-bg-text-color: #FFFFFF;
-    --secondary-dark-bg-text-color: #9DA4BD;
+  --primary-dark-bg-text-color: #ffffff;
+  --secondary-dark-bg-text-color: #9da4bd;
 
-    --primary-background-color: #ffffff;
-    --secondary-background-color: #F7F7F7;
-    --accent-background-color: #191C26;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
+  --accent-background-color: #191c26;
 }
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
 }
 
-/* Прибирає крапки-маркери у списках */
 .list {
-    list-style: none;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
-/* BUTTON */
+/* ------------------------------BUTTON------------------------------ */
 .button {
-    color: var(--primary-dark-bg-text-color);
-    background-color: transparent;
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px; 
 
-    /* font-weight: 700;
-    font-size: 16px;
-    line-height: 1.86;
-    letter-spacing: 0.06em; */
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
-/* ЛОГОТИП */
+/*------------------------------UPTITLE------------------------------*/
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+/*-----------------------------SECTION-TITLE-------------------------*/
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+/*-------------------------------SUBTITLE----------------------------*/
+.subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* ---------------------------------HEADER------------------------- */
 .logo {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
-/* НАВІГАЦІЯ */
 /* DIV для темного бекграунду, видалити потім */
 .dark-bg {
-    background-color: var(--accent-background-color);
+  background-color: var(--accent-background-color);
 }
 
-.header-nav .link {
-    color: var(--primary-dark-bg-text-color);
+.header-nav-link {
+  color: var(--primary-dark-bg-text-color);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+.header-nav-link.current {
+  color: var(--accent-color);
 }
 
-.header .link:hover,
-.header .link:focus {
-    color: var(--accent-color);
+.header-contact {
+  color: var(--primary-dark-bg-text-color);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
 }
 
-.header-nav .link.current {
-    color: var(--accent-color);
-}
-.header-nav .link.current:hover,
-.header-nav .link.current:focus {
-    color: var(--primary-dark-bg-text-color);
+.header-btn {
+  color: var(--primary-dark-bg-text-color);
 }
 
-.header .phone {
-    color: var(--primary-dark-bg-text-color);
-}
-.header .phone:hover, 
-.header .phone:focus {
-    color: var(--accent-color);
-}
-/* ПІДЗАГОЛОВКИ */
-.uptitle {
-    /* font-weight: 600;
-    font-size: 11px;
-    line-height: 1.3636;
-    text-transform: uppercase; */
+
+/*-----------------------------------HERO------------------------------*/
+.hero-link {
+  color: var(--primary-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 }
 
-.uptitle.dark {
-    color: rgba(157, 164, 189, 0.6);
- }
-
- .uptitle.light {
-    color: var(--secondary-text-color);
- }
-
- .uptitle.contacts {
-    color: var(--primary-dark-bg-text-color);
- }
-
-/* ЗАГОЛОВКИ */
-.section-title {
-    /* font-family: 'Raleway'; */
-    /* font-weight: 700;
-    font-size: 42px;
-    line-height: 1.1666;
-    letter-spacing: 0.05em; */
-}
-.section-title.dark {
-    color: var(--primary-dark-bg-text-color);
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
 }
 
- /* DISCRIPTION */
-.description {
-    color: var(--secondary-dark-bg-text-color);
-
-    /* font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6666;
-    letter-spacing: 0.02em; */
-}
-.description.white {
-    color: var(--secondary-text-color);
-}
-
-/* HERO */
-.media .link {
-    color: var(--secondary-text-color);
-}
-.media .link:hover,
-.media .link:focus {
-    color: var(--accent-color);
+.hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-    color: var(--primary-dark-bg-text-color);
-}
-/* ABOUT US */
-.about .text {
-    color: var(--secondary-text-color);
+  color: var(--primary-dark-bg-text-color);
 
-    /* font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.8571;
-    letter-spacing: 0.02em; */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
-.about .button {
-    color: var(--primary-text-color);
+.hero-subtitle {
+  color: var(--secondary-dark-bg-text-color);
 }
-.about .button:hover,
-.about .button:focus {
-    color: var(--primary-dark-bg-text-color);
-    background-color: var(--accent-color);
+
+/* ------------------------------ABOUT US----------------------------- */
+.about-uptitle {
+  color: var(--primary-text-color);
+}
+
+.about-title {
+}
+
+.about-subtitle {
+  color: var(--secondary-text-color);
+}
+
+.about-text {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about-btn {
+  color: var(--primary-text-color);
+}
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--primary-dark-bg-text-color);
+  background-color: var(--accent-color);
+}
+
+/* -----------------------------SERVICES and PRICES------------------- */
+.prices {
+  background-color: var(--accent-background-color);
+}
+
+.prices-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--primary-dark-bg-text-color);
+}
+
+.prices-text {
+  color: var(--secondary-dark-bg-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.prices-btn {
+  color: var(--primary-dark-bg-text-color);
 }
 
 
+/*----------------------------------BENEFITS---------------------------*/
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+
+.benefits-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.benefits-plus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.36;
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.benefits-subtitle {
+  color: var(--secondary-text-color);
+}
+
+/*----------------------------------BARBERS---------------------------*/
+.barbers {
+  background-color: var(--secondary-background-color);
+}
+
+.barbers-list {
+}
+.barbers-item {
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.barbers-text {
+  color: var(--accent-color);
+
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+}
+
+.barbers-soc-list {
+}
+.barbers-soc-item {
+}
+.barbers-soc-link {
+}
+
+/*--------------------------------PORTFOLIO---------------------------*/
+.portfolio {
+}
+.portfolio-uptitle {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+
+/*---------------------------------CONTACTS---------------------------*/
+.contacts {
+  background-color: var(--accent-background-color);
+}
+
+.contacts-title {
+  color: var(--primary-dark-bg-text-color);
+}
+
+.contacts-address {
+  color: var(--secondary-dark-bg-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link {
+  color: var(--secondary-dark-bg-text-color);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.contacts-uptitle {
+  color: var(--primary-dark-bg-text-color);
+}
+
+.contacts-subtitle {
+  color: var(--secondary-dark-bg-text-color);
+}
+
+/*---------------------------------FOOTER------------------------------*/
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer-text {
+  color: var(--secondary-dark-bg-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.footer-link {
+  color: var(--primary-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+    letter-spacing: 0.2em;
+}
