@@ -17,26 +17,63 @@ body {
   color: var(--primary-text-color);
 }
 
+/* ------------------------------RESET------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .link {
   text-decoration: none;
 }
 
+/* ------------------------------CONTAINER------------------------------ */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ------------------------------BUTTON------------------------------ */
 .button {
-  background-color: transparent;
+  padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px; 
 
+  background-color: transparent;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .button:hover,
@@ -68,13 +105,14 @@ body {
 }
 
 /* ---------------------------------HEADER------------------------- */
-.logo {
-  color: var(--secondary-text-color);
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #494b46;
 }
 
-/* DIV для темного бекграунду, видалити потім */
-.dark-bg {
-  background-color: var(--accent-background-color);
+.logo {
+  color: var(--secondary-text-color);
 }
 
 .header-nav-link {
@@ -112,7 +150,6 @@ body {
   color: var(--primary-dark-bg-text-color);
 }
 
-
 /*-----------------------------------HERO------------------------------*/
 .hero-link {
   color: var(--primary-text-color);
@@ -123,20 +160,28 @@ body {
   letter-spacing: 0.2em;
 }
 
+.hero-wrap {
+  background-image: url(../images/hero.jpg);
+  padding: 272px 100px 208px 100px;
+}
+
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
 }
 
 .hero-uptitle {
+  margin-bottom: 20px;
+
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
+  margin-bottom: 20px;
+  
   color: var(--primary-dark-bg-text-color);
 
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -148,17 +193,21 @@ body {
 
 /* ------------------------------ABOUT US----------------------------- */
 .about-uptitle {
+  margin-bottom: 20px;
   color: var(--primary-text-color);
 }
 
 .about-title {
+  margin-bottom: 20px;
 }
 
 .about-subtitle {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .about-text {
+  margin-bottom: 42px;
   color: var(--secondary-text-color);
 
   font-size: 14px;
@@ -181,11 +230,18 @@ body {
 }
 
 .prices-uptitle {
+  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-title {
+  margin-bottom: 44px;
   color: var(--primary-dark-bg-text-color);
+}
+
+.prices-list {
+  border: 1px solid #ffffff;
+  padding: 30px 20px;
 }
 
 .prices-text {
@@ -197,6 +253,9 @@ body {
 }
 
 .prices-btn {
+  display: block;
+  margin: 0 auto;
+
   color: var(--primary-dark-bg-text-color);
 }
 
@@ -207,6 +266,11 @@ body {
 .benefits-list {
 }
 .benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  border: 1px solid #000000;
+  text-align: center;
 }
 
 .benefits-count {
@@ -229,6 +293,14 @@ body {
   line-height: 1.36;
 }
 
+.benefits-uptitle {
+  margin-bottom: 20px;
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+}
+
 .benefits-subtitle {
   color: var(--secondary-text-color);
 }
@@ -238,12 +310,26 @@ body {
   background-color: var(--secondary-background-color);
 }
 
+.barbers-uptitle {
+  margin-bottom: 20px;
+}
+.barbers-title {
+  margin-bottom: 44px;
+}
+
 .barbers-list {
 }
 .barbers-item {
 }
 
+.barber-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .barbers-item-title {
+  margin-bottom: 8px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
@@ -268,15 +354,29 @@ body {
 /*--------------------------------PORTFOLIO---------------------------*/
 .portfolio {
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .portfolio-uptitle {
-}
-.portfolio-list {
-}
-.portfolio-item {
+  margin-bottom: 44px;
 }
 
 /*---------------------------------CONTACTS---------------------------*/
 .contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+
   background-color: var(--accent-background-color);
 }
 
@@ -285,9 +385,11 @@ body {
 }
 
 .contacts-address {
+  margin-top: 40px;
+  margin-bottom: 70px;
+
   color: var(--secondary-dark-bg-text-color);
 
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.67;
@@ -295,6 +397,9 @@ body {
 }
 
 .contacts-link {
+  display: block;
+  margin-top: 20px;
+
   color: var(--secondary-dark-bg-text-color);
 
   font-weight: 400;
@@ -303,6 +408,7 @@ body {
   letter-spacing: 0.02em;
 }
 .contacts-uptitle {
+  margin-bottom: 20px;
   color: var(--primary-dark-bg-text-color);
 }
 
@@ -312,8 +418,11 @@ body {
 
 /*---------------------------------FOOTER------------------------------*/
 .footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: var(--secondary-background-color);
 }
+
 .footer-text {
   color: var(--secondary-dark-bg-text-color);
 
