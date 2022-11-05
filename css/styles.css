@@ -9,6 +9,8 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f7f7f7;
   --accent-background-color: #191c26;
+
+  --gap: 30px;
 }
 
 body {
@@ -46,6 +48,12 @@ address {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+}
+
 /* ------------------------------CONTAINER------------------------------ */
 .container {
   width: 1200px;
@@ -63,7 +71,8 @@ address {
 
 /* ------------------------------BUTTON------------------------------ */
 .button {
-  padding: 12px 20px;
+  min-width: 160px;
+  height: 40px;
   border: 1px solid #ff6c00;
   border-radius: 25px; 
 
@@ -111,13 +120,31 @@ address {
   background-color: #494b46;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 131px;
+
   color: var(--secondary-text-color);
 }
 
-.header-nav-link {
-  color: var(--primary-dark-bg-text-color);
+.navigation {
+  margin-right: auto;
+}
 
+.header-nav {
+  display: flex;
+  gap: var(--gap);
+}
+
+.header-nav-link {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  color: var(--primary-dark-bg-text-color);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -132,8 +159,9 @@ address {
 }
 
 .header-contact {
-  color: var(--primary-dark-bg-text-color);
+  margin-right: 40px;
 
+  color: var(--primary-dark-bg-text-color);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -151,6 +179,14 @@ address {
 }
 
 /*-----------------------------------HERO------------------------------*/
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
 .hero-link {
   color: var(--primary-text-color);
 
@@ -163,6 +199,7 @@ address {
 .hero-wrap {
   background-image: url(../images/hero.jpg);
   padding: 272px 100px 208px 100px;
+  flex-grow: 1;
 }
 
 .hero-link:hover,
@@ -180,7 +217,6 @@ address {
   margin-bottom: 20px;
   
   color: var(--primary-dark-bg-text-color);
-
   font-family: 'Raleway', sans-serif;
   font-size: 72px;
   line-height: 1.18;
@@ -188,10 +224,25 @@ address {
 }
 
 .hero-subtitle {
+  max-width: 360px;
   color: var(--secondary-dark-bg-text-color);
 }
 
 /* ------------------------------ABOUT US----------------------------- */
+.section-container {
+  display: flex;
+  gap: var(--gap);
+}
+
+.about-list {
+  display: flex;
+  gap: var(--gap);
+}
+
+.about-wrap {
+  max-width: 470px;
+}
+
 .about-uptitle {
   margin-bottom: 20px;
   color: var(--primary-text-color);
