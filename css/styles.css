@@ -290,9 +290,25 @@ img {
   color: var(--primary-dark-bg-text-color);
 }
 
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-text {
@@ -314,13 +330,24 @@ img {
 /*----------------------------------BENEFITS---------------------------*/
 .benefits {
 }
-.benefits-list {
+
+.benefits-container {
+  display: flex;
+  gap: 130px;
 }
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-left: 100px;
+}
+
 .benefits-item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  border: 1px solid #000000;
+  background-color: var(--secondary-background-color);
   text-align: center;
 }
 
@@ -343,6 +370,11 @@ img {
   font-size: 11px;
   line-height: 1.36;
 }
+
+.benefits-wrap {
+  max-width: 500px;
+}
+
 
 .benefits-uptitle {
   margin-bottom: 20px;
@@ -369,8 +401,12 @@ img {
 }
 
 .barbers-list {
+  display: flex;
+  gap: var(--gap);
 }
+
 .barbers-item {
+  flex-basis: calc((100% - 60px) / 3) ;
 }
 
 .barber-card {
@@ -385,6 +421,7 @@ img {
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .barbers-text {
@@ -393,6 +430,7 @@ img {
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .barbers-soc-list {
@@ -421,6 +459,15 @@ img {
 
 .portfolio-uptitle {
   margin-bottom: 44px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: var(--gap);
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 3 * var(--gap))) / 4;
 }
 
 /*---------------------------------CONTACTS---------------------------*/
@@ -474,6 +521,11 @@ img {
   background-color: var(--secondary-background-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
 .footer-text {
   color: var(--secondary-dark-bg-text-color);
 
@@ -483,11 +535,17 @@ img {
   letter-spacing: 0.2em;
 }
 
+.footer-list {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
 .footer-link {
   color: var(--primary-text-color);
 
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-    letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
 }
