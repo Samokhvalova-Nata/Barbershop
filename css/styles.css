@@ -333,14 +333,15 @@ img {
 
 .benefits-container {
   display: flex;
-  gap: 130px;
 }
 
 .benefits-list {
   display: flex;
+  width: 50%;
   flex-wrap: wrap;
   gap: var(--gap);
   margin-left: 100px;
+  margin-right: 100px;
 }
 
 .benefits-item {
@@ -372,7 +373,9 @@ img {
 }
 
 .benefits-wrap {
-  max-width: 500px;
+  width: 50%;
+  padding-right: 70px;
+  /* max-width: 500px; */
 }
 
 
