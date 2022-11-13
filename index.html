@@ -152,19 +152,26 @@
         <div class="benefits-container container">
           <ul class="benefits-list list">
             <li class="benefits-item">
-              <span class="benefits-count">600</span><sup class="benefits-plus">+</sup>
+              <span class="benefits-count">600</span>
+              <!-- <span class="benefits-plus">+</span> -->
               <p class="benefits-text">Satisfied customers per day</p>
             </li>
+
             <li class="benefits-item">
-              <span class="benefits-count">50</span><sup class="benefits-plus">+</sup>
+              <span class="benefits-count">50</span>
+              <!-- <sup class="benefits-plus">+</sup> -->
               <p class="benefits-text">Awards for excellent service</p>
             </li>
+
             <li class="benefits-item">
-              <span class="benefits-count">20</span><sup class="benefits-plus">+</sup>
+              <span class="benefits-count">20</span>
+              <!-- <sup class="benefits-plus">+</sup> -->
               <p class="benefits-text">Kyiv’s best barbers</p>
             </li>
+
             <li class="benefits-item">
-              <span class="benefits-count">100</span><sup class="benefits-plus">+</sup>
+              <span class="benefits-count">100</span>
+              <!-- <sup class="benefits-plus">+</sup> -->
               <p class="benefits-text">Gifts for regular customers</p>
             </li>
           </ul>
@@ -354,19 +361,47 @@
         </div>
       </section>
 
-      <!--------------CONTACTS-------------->
-      <section class="contacts" id="contacts">
-        <div class="container">
-          <h2 class="contacts-title section-title">Contacts</h2>
+      <!--------------ONLINE-------------->
+      <div class="contacts-wrap">
+        <div class="container contacts-container">
+          <section class="online">
+          <h2 class="online-title section-title">Online-booking</h2>
+        </section>
+        <!--------------CONTACTS-------------->
+        <section class="contacts" id="contacts">
+        <h2 class="contacts-title section-title">Contacts</h2>
           <address class="contacts-address">
-            st. Vasilkovaya, 7A<br />Kiev, 08132
-            <a href="tel:+380441111111" class="contacts-link link">+38 044 111 11 11</a>
-            <a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <a href="https://goo.gl/maps/oKYZWMwzyQTYq2JNA" class="contacts-link contacts-link-bold link" target="_blank" rel="noopener noreferrer">
+                  <svg class="contacts-icon" width="24px" height="24px">
+                    <use href="./images/icons-defs.svg#map-pin"></use>
+                  </svg>
+                  st. Vasilkovaya, 7A Kiev, 0813</a>
+              </li>
+              <li class="contacts-item">
+                <a href="tel:+380441111111" class="contacts-link link">
+                  <svg class="contacts-icon" width="24px" height="24px">
+                    <use href="./images/icons-defs.svg#phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a>
+              </li>
+              <li class="contacts-item">
+                <a href="mailto:barbershop@email.com" class="contacts-link">
+                  <svg class="contacts-icon" width="24px" height="24px">
+                    <use href="./images/icons-defs.svg#mail"></use>
+                  </svg>
+                  barbershop@email.com</a>
+              </li>
+            </ul>
+            
           </address>
           <p class="contacts-uptitle uptitle">Working hours</p>
           <p class="contacts-subtitle subtitle">Every day from 9:00 to 22:00</p>
-        </div>
       </section>
+        </div>
+      </div>
+      
     </main>
 
     <footer class="footer">

@@ -321,7 +321,6 @@ img {
 }
 
 .prices-list {
-  border: 1px solid #ffffff;
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
@@ -414,6 +413,16 @@ img {
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
+}
+
+.benefits-count:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 22px;
+  background-image: url(../images/+.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .benefits-plus {
@@ -526,8 +535,6 @@ img {
 
 
 /*--------------------------------PORTFOLIO---------------------------*/
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -554,12 +561,37 @@ img {
   flex-basis: calc((100% - 3 * var(--gap))) / 4;
 }
 
+/* <------------------------------ONLINE------------------------------> */
+.contacts-wrap {
+  background-color: var(--accent-background-color);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.online {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+}
+
+.online-title {
+  color: var(--primary-dark-bg-text-color);
+}
+
+
 /*---------------------------------CONTACTS---------------------------*/
 .contacts {
+  width: calc(50% - 15px);
   padding-top: 130px;
   padding-bottom: 120px;
-
-  background-color: var(--accent-background-color);
+  padding-left: 100px;
 }
 
 .contacts-title {
@@ -571,7 +603,6 @@ img {
   margin-bottom: 70px;
 
   color: var(--secondary-dark-bg-text-color);
-
   font-weight: 700;
   font-size: 18px;
   line-height: 1.67;
@@ -579,19 +610,37 @@ img {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
   margin-top: 20px;
-
+  align-items: center;
+  
   color: var(--secondary-dark-bg-text-color);
-
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
+
+.contacts-link-bold {
+  font-weight: 700;
+  width: 230px;
+}
+
+.contacts-icon {
+  stroke: currentColor;
+  margin-right: 20px;
+}
+
 .contacts-uptitle {
   margin-bottom: 20px;
   color: var(--primary-dark-bg-text-color);
+}
+
+.contacts-uptitle::before {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .contacts-subtitle {
