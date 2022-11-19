@@ -11,6 +11,8 @@
   --accent-background-color: #191c26;
 
   --gap: 30px;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -83,6 +85,8 @@ img {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  transition: background-color var(--transition);
 }
 
 .button:hover,
@@ -159,11 +163,14 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  transition: color var(--transition);
 }
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--accent-color);
 }
+
 .header-nav-link.current {
   color: var(--accent-color);
 }
@@ -178,7 +185,9 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color var(--transition);
 }
+
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
@@ -193,8 +202,21 @@ img {
   display: flex;
 }
 
-.hero-list {
+.soc-list {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  padding-left: 27px;
+}
+
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+
 }
 
 .hero-list::before {
@@ -202,7 +224,7 @@ img {
   height: 1px;
   width: 60px;
   background-color: currentColor;
-  display: block;
+  
 }
 
 .hero-link {
@@ -212,6 +234,8 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+
+  transition: color var(--transition);
 }
 
 .hero-wrap {
@@ -286,7 +310,10 @@ img {
 
 .about-btn {
   color: var(--primary-text-color);
+
+  transition: background-color var(--transition), color var(--transition);;
 }
+
 .about-btn:hover,
 .about-btn:focus {
   color: var(--primary-dark-bg-text-color);
@@ -333,7 +360,6 @@ img {
   background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-
 .prices-item {
   display: flex;
   justify-content: space-between;
@@ -373,11 +399,7 @@ img {
   color: var(--primary-dark-bg-text-color);
 }
 
-
 /*----------------------------------BENEFITS---------------------------*/
-.benefits {
-}
-
 .benefits-container {
   display: flex;
   padding-left: 115px;
@@ -389,7 +411,6 @@ img {
   width: 370px;
   flex-wrap: wrap;
   flex-shrink: 0;
-
 }
 
 .benefits-item {
@@ -442,7 +463,6 @@ img {
   max-width: 500px;
   padding-top: 9px;
 }
-
 
 .benefits-uptitle {
   margin-bottom: 20px;
@@ -526,6 +546,8 @@ img {
   fill: var(--primary-text-color);
   width: 20px;
   height: 20px;
+
+  transition: fill var(--transition);
 }
 
 .barbers-soc-link:hover .barbers-soc-icon,
@@ -672,6 +694,14 @@ img {
   display: flex;
   gap: 40px;
   margin-left: auto;
+  align-items: center;
+}
+
+.footer-list::before {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background-color: var(--primary-text-color);
 }
 
 .footer-link {
@@ -681,4 +711,10 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  transition: color var(--transition);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
