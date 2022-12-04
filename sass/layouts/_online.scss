@@ -4,23 +4,23 @@
     padding-right: 30px;
 }
 
-.online-title {
+.online__title {
     color: var(--primary-dark-bg-text-color);
     margin-bottom: 44px;
 }
 
-.online-form {
+.booking {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.online-wrap {
+.booking__wrap {
     position: relative;
     margin-bottom: 44px;
 }
 
-.online-item {
+.booking__item {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -34,12 +34,12 @@
     }
 }
 
-.online-input {
+.booking__input {
     width: 270px;
     height: 24px;
 }
 
-.online-label {
+.booking__label {
     position: absolute;
     left: 0;
     @include font (600, 11px, 1.36, 0.1em);
@@ -48,25 +48,25 @@
     transition: transform var(--transition), 
     color var(--transition);
 
-    .online-item:focus + &,
-    .online-item:not(:placeholder-shown) + & {
+    .booking__item:focus + &,
+    .booking__item:not(:placeholder-shown) + & {
     transform: translateY(-100%);
     color: #ffffff;
     }
 }
 
-.online-text-wrap {
+.booking__text-wrap {
     position: relative;
     width: 100%;
     margin-bottom: 44px;
 }
 
-.online-text {
+.booking__text {
     width: 100%;
     height: 76px;
     resize: none;
 }
 
-.online-btn {
+.booking__btn {
     color: var(--primary-background-color);
 }

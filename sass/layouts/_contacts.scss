@@ -5,11 +5,11 @@
     padding-left: 100px;
 }
 
-.contacts-title {
+.contacts__title {
     color: var(--primary-dark-bg-text-color);
 }
 
-.contacts-address {
+.address {
     margin-top: 40px;
     margin-bottom: 70px;
 
@@ -17,7 +17,7 @@
     @include font (700, 18px, 1.67, 0.02em);
 }
 
-.contacts-link {
+.address__link {
     display: flex;
     margin-top: 20px;
     align-items: center;
@@ -25,17 +25,17 @@
     @include font (400, 18px, 1.67, 0.02em);
 }
 
-.contacts-link-bold {
+.address__link-bold {
     font-weight: 700;
     width: 230px;
 }
 
-.contacts-icon {
+.address__icon {
     stroke: currentColor;
     margin-right: 20px;
 }
 
-.contacts-uptitle {
+.contacts__uptitle {
     margin-bottom: 20px;
     color: var(--primary-dark-bg-text-color);
 
@@ -47,6 +47,6 @@
     }
 }
 
-.contacts-subtitle {
+.contacts__subtitle {
     color: var(--secondary-dark-bg-text-color);
 }

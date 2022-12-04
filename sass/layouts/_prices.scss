@@ -8,23 +8,23 @@
     margin: 0 auto;
 }
 
-.prices-uptitle {
+.prices__uptitle {
     margin-bottom: 20px;
     color: rgba(157, 164, 189, 0.6);
 }
 
-.prices-title {
+.prices__title {
     margin-bottom: 44px;
     color: var(--primary-dark-bg-text-color);
 }
 
-.prices-wrap {
+.prices__wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 44px;
 }
 
-.prices-list {
+.table-list {
     padding: 30px 20px;
     width: calc((100% - 30px) / 2);
 
@@ -36,7 +36,7 @@
     }
 }
 
-.prices-item {
+.table-list__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -56,7 +56,7 @@
     }
 }
 
-.prices-text {
+.table-list__text {
     color: var(--secondary-dark-bg-text-color);
     @include font (null, 18px, 1.67, 0.02em);
 
@@ -65,7 +65,7 @@
     }
 }
 
-.prices-btn {
+.prices__btn {
     display: block;
     margin: 0 auto;
 

@@ -2,52 +2,52 @@
     background-color: var(--secondary-background-color);
 }
 
-.barbers-uptitle {
+.barbers__uptitle {
     margin-bottom: 20px;
 }
 
-.barbers-title {
+.barbers__title {
     margin-bottom: 44px;
 }
 
-.barbers-list {
+.card-list {
     display: flex;
     gap: var(--gap);
 }
 
-.barbers-item {
+.card-list__item {
     flex-basis: calc((100% - 60px) / 3) ;
 }
 
-.barber-card {
+.card-list__meta {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.barbers-item-title {
+.card-list__title {
     margin-bottom: 8px;
     @include font (400, 18px, 1.39, 0.02em);
     text-align: center;
 }
 
-.barbers-text {
+.card-list__text {
     color: var(--accent-color);
     @include font (null, 14px, 1.36, 0.025em);
     text-align: center;
 }
 
-.barbers-soc-list {
+.socials {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.barbers-soc-item {
+.socials__item {
     width: 44px;
     height: 44px;
 }
 
-.barbers-soc-link {
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,14 +57,14 @@
     border-radius: 50%;
 }
 
-.barbers-soc-icon {
+.socials__icon {
     fill: var(--primary-text-color);
     width: 20px;
     height: 20px;
 
     transition: fill var(--transition);
-    .barbers-soc-link:hover &,
-    .barbers-soc-link:focus & {
+    .socials__link:hover &,
+    .socials__link:focus & {
     fill: var(--accent-color);
     }
 }

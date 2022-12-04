@@ -1,38 +1,38 @@
-.section-container {
+.about__container {
     display: flex;
     gap: var(--gap);
 }
 
-.about-list {
+.pictures-list {
     display: flex;
     gap: var(--gap);
 }
 
-.about-wrap {
+.about__wrap {
     max-width: 470px;
 }
 
-.about-uptitle {
+.about__uptitle {
     margin-bottom: 20px;
     color: var(--primary-text-color);
 }
 
-.about-title {
+.about__title {
     margin-bottom: 20px;
 }
 
-.about-subtitle {
+.about__subtitle {
     color: var(--secondary-text-color);
     margin-bottom: 20px;
 }
 
-.about-text {
+.about__text {
     margin-bottom: 42px;
     color: var(--secondary-text-color);
     @include font (null, 14px, 1.86, 0.02em);
 }
 
-.about-btn {
+.about__btn {
     color: var(--primary-text-color);
 
     transition: background-color var(--transition), color var(--transition);

@@ -4,17 +4,17 @@
     background-color: var(--secondary-background-color);
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     align-items: center;
 }
 
-.footer-text {
+.footer__text {
     color: var(--secondary-dark-bg-text-color);
     @include font (600, 11px, 1.36, 0.02em);
 }
 
-.footer-list {
+.footer__list {
     display: flex;
     gap: 40px;
     margin-left: auto;
@@ -28,7 +28,7 @@
     }
 }
 
-.footer-link {
+.footer__link {
     color: var(--primary-text-color);
     @include font (600, 11px, 1.36, 0.02em);
     transition: color var(--transition);

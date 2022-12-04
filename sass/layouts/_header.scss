@@ -5,27 +5,27 @@
     width: 100%;
 }
 
-.header-container {
+.header__container {
     padding-right: 35px;
     display: flex;
     align-items: center;
 }
 
-.logo {
+.header__logo {
     margin-right: 131px;
     color: var(--secondary-text-color);
 }
 
-.navigation {
+.header__navigation {
     margin-right: auto;
 }
 
-.header-nav {
+.menu {
     display: flex;
     gap: var(--gap);
 }
 
-.header-nav-link {
+.menu__link {
     padding-top: 52px;
     padding-bottom: 52px;
 
@@ -43,7 +43,7 @@
     }
 }
 
-.header-contact {
+.header__contact {
     margin-right: 40px;
 
     color: var(--primary-dark-bg-text-color);
@@ -58,6 +58,6 @@
     }
 }
 
-.header-btn {
+.header__btn {
     color: var(--primary-dark-bg-text-color);
 }

@@ -1,4 +1,4 @@
-.contacts-wrap {
+.contacts__wrap {
     background-color: var(--accent-background-color);
     background-image: url(../images/contacts-bg.png);
     background-repeat: no-repeat;
@@ -8,6 +8,6 @@
     margin: 0 auto;
 }
 
-.contacts-container {
+.contacts__container {
     display: flex;
 }
