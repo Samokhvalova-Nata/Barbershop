@@ -1,0 +1,12 @@
+.portfolio-uptitle {
+    margin-bottom: 44px;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: var(--gap);
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 3 * var(--gap))) / 4;
+}

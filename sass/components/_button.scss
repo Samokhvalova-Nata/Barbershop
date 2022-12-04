@@ -1,0 +1,19 @@
+.button {
+    min-width: 160px;
+    height: 40px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px; 
+  
+    background-color: transparent;
+    font-family: inherit;
+    @include font (600, 12px, 1.33, 0.09em);
+    text-transform: uppercase;
+  
+    transition: background-color var(--transition);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  
+  

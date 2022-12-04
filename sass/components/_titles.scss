@@ -1,0 +1,23 @@
+.uptitle {
+    @include font (600, 11px, 1.36, null);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+&::before {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background-color: currentColor;
+    }
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    @include font (null, 42px, 1.17, 0.05em);
+}
+
+.subtitle {
+    @include font (null, 18px, 1.67, 0.02em);
+}

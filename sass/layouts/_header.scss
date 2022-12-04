@@ -1,0 +1,63 @@
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: absolute;
+    width: 100%;
+}
+
+.header-container {
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 131px;
+    color: var(--secondary-text-color);
+}
+
+.navigation {
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: var(--gap);
+}
+
+.header-nav-link {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    color: var(--primary-dark-bg-text-color);
+    @include font (600, 12px, 1.33, 0.1em);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
+    &.current {
+    color: var(--accent-color);
+    }
+}
+
+.header-contact {
+    margin-right: 40px;
+
+    color: var(--primary-dark-bg-text-color);
+    @include font (600, 12px, 1.33, 0.1em);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.header-btn {
+    color: var(--primary-dark-bg-text-color);
+}

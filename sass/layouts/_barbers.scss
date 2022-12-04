@@ -1,0 +1,71 @@
+.barbers {
+    background-color: var(--secondary-background-color);
+}
+
+.barbers-uptitle {
+    margin-bottom: 20px;
+}
+
+.barbers-title {
+    margin-bottom: 44px;
+}
+
+.barbers-list {
+    display: flex;
+    gap: var(--gap);
+}
+
+.barbers-item {
+    flex-basis: calc((100% - 60px) / 3) ;
+}
+
+.barber-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.barbers-item-title {
+    margin-bottom: 8px;
+    @include font (400, 18px, 1.39, 0.02em);
+    text-align: center;
+}
+
+.barbers-text {
+    color: var(--accent-color);
+    @include font (null, 14px, 1.36, 0.025em);
+    text-align: center;
+}
+
+.barbers-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.barbers-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background-color);
+    border-radius: 50%;
+}
+
+.barbers-soc-icon {
+    fill: var(--primary-text-color);
+    width: 20px;
+    height: 20px;
+
+    transition: fill var(--transition);
+    .barbers-soc-link:hover &,
+    .barbers-soc-link:focus & {
+    fill: var(--accent-color);
+    }
+}
+
