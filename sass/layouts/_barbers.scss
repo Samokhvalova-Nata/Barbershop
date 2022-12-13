@@ -13,10 +13,15 @@
 .card-list {
     display: flex;
     gap: var(--gap);
+    flex-wrap: wrap;
 }
 
 .card-list__item {
-    flex-basis: calc((100% - 60px) / 3) ;
+    width: 100%;
+
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .card-list__meta {

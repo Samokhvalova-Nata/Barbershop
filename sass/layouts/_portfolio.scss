@@ -1,12 +1,25 @@
 .portfolio__uptitle {
-    margin-bottom: 44px;
+    margin-bottom: 71px;
+
+    @include tablet {
+        margin-bottom: 44px;
+    }
 }
 
 .card-set {
     display: flex;
     gap: var(--gap);
+    flex-wrap: wrap;
 }
 
 .card-set__item {
-    flex-basis: calc((100% - 3 * var(--gap))) / 4;
+    width: 100%;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
 }
