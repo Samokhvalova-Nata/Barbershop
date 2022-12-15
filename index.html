@@ -37,7 +37,7 @@
     </header> -->
     <main>
       <!--------------HERO-------------->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="soc">
             <ul class= "soc-list list">
@@ -58,25 +58,30 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--------------ABOUT US-------------->
       <section class="section about" id="about">
         <div class="container about__container">
           <ul class="pictures-list list">
             <li class="pictures-list__item">
-              <img
-                src="./images/best1.jpg"
-                alt="Beard shaving"
-                width="270"
-                height="445"/>
+              <picture>
+                <source srcset="./images/best1.jpg 1x, ./images/best1-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/best1-tab.jpg 1x, ./images/best1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <img src="./images/best1-tab.jpg" 
+                    alt="Beard shaving" 
+                    width="330">
+              </picture>
             </li>
+
             <li class="pictures-list__item">
-              <img
-                src="./images/best2.jpg"
-                alt="Man's haircut with razor shave"
-                width="270"
-                height="445"/>
+              <picture>
+                <source srcset="./images/best2.jpg 1x, ./images/best2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/best2-tab.jpg 1x, ./images/best2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <img src="./images/best2-tab.jpg" 
+                    alt="Man's haircut with razor shave" 
+                    width="330">
+              </picture>
             </li>
           </ul>
           <div class="about__wrap">
@@ -216,11 +221,14 @@
           <h2 class="barbers__title section-title">Our barbers</h2>
           <ul class="card-list list">
             <li class="card-list__item">
-              <img
-                src="./images/barber1.jpg"
-                alt="John Smith"
-                width="370"
-                height="346"/>
+              <picture>
+                <source srcset="./images/barber1.jpg 1x, ./images/barber1-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/barber1-tab.jpg 1x, ./images/barber1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/barber1-mob.jpg 1x, ./images/barber1-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/barber1-tab.jpg" 
+                    alt="John Smith" 
+                    width="450">
+              </picture>
               <div class="card-list__meta">
                 <h3 class="card-list__title">John Smith</h3>
                 <p class="card-list__text">Extreme Barber</p>
@@ -258,11 +266,14 @@
             </li>
 
             <li class="card-list__item">
-              <img
-                src="./images/barber2.jpg"
-                alt="Michele Doe"
-                width="370"
-                height="346"/>
+              <picture>
+                <source srcset="./images/barber2.jpg 1x, ./images/barber2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/barber2-tab.jpg 1x, ./images/barber2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/barber2-mob.jpg 1x, ./images/barber2-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/barber2-tab.jpg" 
+                    alt="Michele Doe" 
+                    width="450">
+              </picture>
               <div class="card-list__meta">
                 <h3 class="card-list__title">Michele Doe</h3>
                 <p class="card-list__text">Extreme Barber</p>
@@ -297,15 +308,17 @@
                   </a>
                 </li>
               </ul>
-
             </li>
 
             <li class="card-list__item">
-              <img
-                src="./images/barber3.jpg"
-                alt="Alan Black"
-                width="370"
-                height="346"/>
+              <picture>
+                <source srcset="./images/barber3.jpg 1x, ./images/barber3-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/barber3-tab.jpg 1x, ./images/barber3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/barber3-mob.jpg 1x, ./images/barber3-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/barber3-tab.jpg" 
+                    alt="Alan Black" 
+                    width="450">
+              </picture>
               <div class="card-list__meta">
                 <h3 class="card-list__title">Alan Black</h3>
                 <p class="card-list__text">Extreme Barber</p>
@@ -353,35 +366,47 @@
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="card-set list">
             <li class="card-set__item">
-              <img
-                src="./images/portfolio-card1.jpg"
-                alt="Barber is making haircut"
-                width="270"
-                height="360"/>
+              <picture>
+                <source srcset="./images/portfolio-card1.jpg 1x, ./images/portfolio-card1-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/portfolio-card1-tab.jpg 1x, ./images/portfolio-card1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/portfolio-card1-mob.jpg 1x, ./images/portfolio-card1-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/portfolio-card1-mob.jpg" 
+                    alt="Barber is making haircut" 
+                    width="418">
+              </picture>
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/portfolio-card2.jpg"
-                alt="Barber is saving a men"
-                width="270"
-                height="360"/>
+              <picture>
+                <source srcset="./images/portfolio-card2.jpg 1x, ./images/portfolio-card2-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/portfolio-card2-tab.jpg 1x, ./images/portfolio-card2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/portfolio-card2-mob.jpg 1x, ./images/portfolio-card2-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/portfolio-card2-mob.jpg" 
+                    alt="Barber is saving a men" 
+                    width="418">
+              </picture>
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/portfolio-card3.jpg"
-                alt="Barber is working"
-                width="270"
-                height="360"/>
+              <picture>
+                <source srcset="./images/portfolio-card3.jpg 1x, ./images/portfolio-card3-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/portfolio-card3-tab.jpg 1x, ./images/portfolio-card3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/portfolio-card3-mob.jpg 1x, ./images/portfolio-card3-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/portfolio-card3-mob.jpg" 
+                    alt="Barber is working" 
+                    width="418">
+              </picture>
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/portfolio-card4.jpg"
-                alt="Barber is making haircut with razor shave"
-                width="270"
-                height="360"/>
+              <picture>
+                <source srcset="./images/portfolio-card4.jpg 1x, ./images/portfolio-card4-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/portfolio-card4-tab.jpg 1x, ./images/portfolio-card4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/portfolio-card4-mob.jpg 1x, ./images/portfolio-card4-mob-2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/portfolio-card4-mob.jpg" 
+                    alt="Barber is making haircut with razor shave" 
+                    width="418">
+              </picture>
             </li>
           </ul>
         </div>
