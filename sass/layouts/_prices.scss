@@ -47,8 +47,13 @@
 }
 
 .table-list {
-    width: 100%;
-    padding: 30px 20px 30px 40px;
+    width: 100%;        
+    padding: 30px 20px;
+
+    @include mobile {
+        padding: 30px 20px 30px 40px;
+    }
+
     @include tablet {
         padding: 32px 27px 32px 40px;
     }
@@ -88,7 +93,7 @@
 
     &::before {
     content: '';
-    width: 65px;
+    width: 15px;
     height: 1px;
     background-color: rgba(157, 164, 189, 0.12);
     flex-grow: 1;

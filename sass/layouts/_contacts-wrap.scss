@@ -1,13 +1,38 @@
 .contacts__wrap {
     background-color: var(--accent-background-color);
-    background-image: url(../images/contacts-bg.png);
+    background-image: url(../images/contacts-bg-mob.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: calc(50% - 15px) 100%;
+    background-position: bottom;
+    background-size: 100% calc(50% - 15px);
     max-width: 1600px;
     margin: 0 auto;
+    @include desktop {
+        background-position: right;
+        background-size: calc(50% - 15px) 100%;
+    }
+    @include retina {
+        background-image: url(../images/contacts-bg-mob-2x.png);
+        }
+
+    @include mobile {
+            background-image: url(../../images/contacts-bg-tab.png);
+            @include retina {
+            background-image: url(../images/contacts-bg-tab-2x.png);
+            }
+        }
+
+    @include tablet {
+            background-image: url(../../images/contacts-bg.png);
+            @include retina {
+            background-image: url(../images/contacts-bg-2x.png);
+            }  
+        }
 }
 
 .contacts__container {
     display: flex;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
 }

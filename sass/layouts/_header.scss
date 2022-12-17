@@ -1,19 +1,35 @@
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     position: absolute;
     width: 100%;
 }
 
 .header__container {
-    padding-right: 35px;
+    // min-width: 100%;
+    position: relative;
+    // padding-right: 35px;
     display: flex;
     align-items: center;
+    // outline: 2px solid red; 
 }
 
 .header__logo {
-    margin-right: 131px;
+    @include tablet {
+        margin-right: 60px;
+    }
+    @include desktop {
+        margin-right: 131px;
+    } 
     color: var(--secondary-text-color);
+    fill: #ffffff;
+    @include tablet {
+        fill: var(--primary-text-color);
+    }
 }
 
 .header__navigation {
@@ -21,8 +37,15 @@
 }
 
 .menu {
-    display: flex;
-    gap: var(--gap);
+    display: none;
+    @include tablet {
+        display: flex;
+        gap: 16px;
+    }
+
+    @include desktop {
+        gap: var(--gap);
+    }
 }
 
 .menu__link {
@@ -44,7 +67,18 @@
 }
 
 .header__contact {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    position: absolute;
+    right: 0;
+    transform: translateY(40px);
     margin-right: 40px;
+    @include desktop {
+        transform: translateY(0);
+        position: static;
+    }
 
     color: var(--primary-dark-bg-text-color);
     @include font (600, 12px, 1.33, 0.1em);
@@ -59,5 +93,139 @@
 }
 
 .header__btn {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    margin-right: 20px;
     color: var(--primary-dark-bg-text-color);
+}
+
+// ---------------MOBILE MENU-------
+
+.menu-open {
+    width: 40px;
+    height: 40px;
+    @include flex;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu-open-icon {
+    fill: var(--primary-dark-bg-text-color);
+    .menu-open:hover &,
+    .menu-open:focus & {
+        fill: var(--accent-color);
+    }
+    transition: fill var(--transition);
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    transition: opacity var(--transition), visibility var(--transition);
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu__container {
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+}
+
+.mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menu-close {
+    width: 40px;
+    height: 40px;
+    @include flex;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.menu-close-icon {
+    .menu-close:hover &,
+    .menu-close:focus & {
+        fill: var(--accent-color);
+    }
+    transition: fill var(--transition);
+}
+
+.mob-menu__list {
+    margin-bottom: 64px;
+}
+
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-menu__link {
+    @include font (600, 18px, 1.39, 0.1em);
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+    transition: color var(--transition);
+}
+
+.mob-menu__contact {
+    @include font (600, 18px, 1.39, 0.1em);
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.mob-menu__btn {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.mob-soc {
+    position: relative;
+    padding-left: 100px;
+}
+
+.mob-soc::before {
+    content: '';    
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+}
+
+.mob-soc__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-soc__link {
+    @include font (600, 14px, 1.36, 0.2em);
+    color: var(--primary-text-color);
 }
